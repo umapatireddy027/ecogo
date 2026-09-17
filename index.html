@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoGo | Sustainable Paper Bottles</title>
+  <meta name="description" content="EcoGo paper bottles in 250ml, 500ml, 750ml and 1L with custom branding for businesses, events and hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#home"><span>Eco</span>Go<span class="dot">.</span></a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#custom">Customization</a>
+      <a href="#why">Why EcoGo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small" href="https://wa.me/918919522552?text=Hello%20EcoGo%2C%20I%20am%20interested%20in%20your%20paper%20bottles." target="_blank" rel="noopener">WhatsApp Us</a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">SUSTAINABLE HYDRATION • MADE FOR YOUR BRAND</p>
+      <h1>Paper bottles.<br><em>Your brand.</em><br>Made to stand out.</h1>
+      <p class="lead">Premium paper bottles for water, beverages, hospitality, events and corporate branding — presented with a realistic EcoGo product visual and available in 250ml, 500ml, 750ml and 1 litre formats.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#quote">Request a Quote</a>
+        <a class="text-link" href="#products">Explore sizes →</a>
+      </div>
+      <div class="trust-row">
+        <div><strong>4</strong><span>Popular sizes</span></div>
+        <div><strong>100%</strong><span>Brand-ready</span></div>
+        <div><strong>B2B</strong><span>Bulk orders</span></div>
+      </div>
+    </div>
+    <div class="hero-art hero-photo-art">
+      <img class="hero-product-photo" src="assets/ecogo-open-bottle.png" alt="EcoGo paper bottle with cap being opened">
+      <div class="floating-card"><span>♻</span><div><strong>Custom branding</strong><small>Logo • Colours • Artwork</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">PRODUCT RANGE</p><h2>Choose your bottle size</h2></div>
+      <p>Sizes and product positioning are inspired by the referenced Kevron paper-bottle range; 750ml is presented as a customizable size.</p>
+    </div>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-visual"><div class="mini-bottle b250"><span>250</span></div></div>
+        <div class="product-info"><span class="size">250 ML</span><h3>Compact</h3><p>Ideal for events, meetings, conferences and single-serve hydration.</p><button onclick="selectProduct('250ml')">Customize 250ml →</button></div>
+      </article>
+      <article class="product-card featured">
+        <div class="badge">POPULAR</div>
+        <div class="product-visual photo-product"><img src="assets/ecogo-open-bottle.png" alt="EcoGo paper bottle product photo"></div>
+        <div class="product-info"><span class="size">500 ML</span><h3>Everyday</h3><p>A versatile format for offices, restaurants, hotels and branded water.</p><button onclick="selectProduct('500ml')">Customize 500ml →</button></div>
+      </article>
+      <article class="product-card">
+        <div class="product-visual"><div class="mini-bottle b750"><span>750</span></div></div>
+        <div class="product-info"><span class="size">750 ML</span><h3>Premium</h3><p>Extra capacity for premium hospitality, corporate and retail applications.</p><button onclick="selectProduct('750ml')">Customize 750ml →</button></div>
+      </article>
+      <article class="product-card">
+        <div class="product-visual"><div class="mini-bottle b1000"><span>1L</span></div></div>
+        <div class="product-info"><span class="size">1 LITRE</span><h3>Grande</h3><p>Made for restaurants, hotels, retail shelves and high-volume hydration.</p><button onclick="selectProduct('1 litre')">Customize 1L →</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="custom" class="custom-section">
+  <div class="container custom-grid">
+    <div>
+      <p class="eyebrow">YOUR BRAND, YOUR BOTTLE</p>
+      <h2>Turn every bottle into a brand touchpoint.</h2>
+      <p class="lead">Share your logo, colours and artwork. EcoGo can help you create a branded bottle concept for your business, event or campaign.</p>
+      <div class="features">
+        <div><span>01</span><div><h3>Logo printing</h3><p>Place your brand logo and identity directly on the bottle design.</p></div></div>
+        <div><span>02</span><div><h3>Custom artwork</h3><p>Use your colours, messaging, QR codes and campaign graphics.</p></div></div>
+        <div><span>03</span><div><h3>Bulk production</h3><p>Tell us your quantity and required date to receive a tailored quotation.</p></div></div>
+      </div>
+    </div>
+    <div class="customizer">
+      <div class="customizer-top"><span>360° PRODUCT VIEW</span><span class="status">● DRAG TO ROTATE</span></div>
+      <div class="real-photo-strip"><img src="assets/ecogo-open-bottle.png" alt="EcoGo open paper bottle"></div>
+      <div class="viewer-stage" id="viewerStage" aria-label="Interactive 360 degree paper bottle viewer">
+        <div class="viewer-shadow"></div>
+        <div class="spin-bottle" id="spinBottle">
+          <div class="spin-neck"></div>
+          <div class="spin-cap"></div>
+          <div class="spin-body">
+            <div class="spin-label">
+              <small id="spinBrand">YOUR BRAND</small>
+              <strong>PURE<br>WATER</strong>
+              <span id="spinSize">500 ML</span>
+            </div>
+            <div class="spin-highlight"></div>
+          </div>
+        </div>
+        <div class="viewer-hint">↔ Drag left / right</div>
+      </div>
+      <div class="viewer-controls">
+        <button type="button" onclick="rotateBottle(-30)">↶</button>
+        <input id="angleRange" type="range" min="0" max="360" value="0" aria-label="Bottle rotation">
+        <button type="button" onclick="rotateBottle(30)">↷</button>
+        <button type="button" class="auto-spin" id="autoSpinBtn" onclick="toggleAutoSpin()">▶ Auto 360°</button>
+      </div>
+      <div class="controls">
+        <label>Brand name<input id="brandName" type="text" placeholder="Your Company" oninput="updatePreview()"></label>
+        <label>Bottle size<select id="bottleSize" onchange="updateSize()"><option>250ml</option><option selected>500ml</option><option>750ml</option><option>1 litre</option></select></label>
+        <label>Label style<select onchange="updateStyle(this.value)"><option value="natural">Natural</option><option value="clean">Clean</option><option value="premium">Premium</option></select></label>
+      </div>
+      <a class="btn full" href="https://wa.me/918919522552?text=Hello%20EcoGo%2C%20I%20want%20a%20custom%20paper%20bottle%20quote." target="_blank" rel="noopener">Request Quote on WhatsApp →</a>
+      <p class="form-note">Interactive 360° product viewer. Replace the illustrated bottle with approved product photography/360 frames when available.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="section">
+  <div class="container">
+    <div class="center-head"><p class="eyebrow">WHY ECOGO</p><h2>Built around your sustainability story</h2></div>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon">🌿</div><h3>Paper-first design</h3><p>A paper-forward bottle concept designed to offer an alternative to conventional plastic packaging.</p></div>
+      <div class="why-card"><div class="icon">🎨</div><h3>Brand ready</h3><p>Use your logo, colours, artwork and messaging to make the bottle part of your customer experience.</p></div>
+      <div class="why-card"><div class="icon">🏢</div><h3>Made for business</h3><p>Suitable for hospitality, offices, conferences, weddings, restaurants, retail and corporate campaigns.</p></div>
+      <div class="why-card"><div class="icon">📦</div><h3>Bulk ordering</h3><p>Request quantities, delivery requirements and customization details for a tailored commercial quote.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <div class="center-head"><p class="eyebrow">HOW IT WORKS</p><h2>From idea to branded bottle</h2></div>
+    <div class="steps">
+      <div><b>01</b><h3>Tell us what you need</h3><p>Choose size, quantity and use case.</p></div>
+      <div><b>02</b><h3>Share your brand</h3><p>Send your logo and artwork.</p></div>
+      <div><b>03</b><h3>Approve the design</h3><p>Review your branded bottle concept.</p></div>
+      <div><b>04</b><h3>Production & delivery</h3><p>Confirm the order and receive your batch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="quote-section">
+  <div class="container quote-grid">
+    <div>
+      <p class="eyebrow">REQUEST A QUOTE</p>
+      <h2>Let's put your brand on the bottle.</h2>
+      <p>Tell us your bottle size, quantity and branding requirements. Our sales team can respond with availability and pricing.</p>
+      <div class="contact-points"><p>📞 <strong>+91 89195 22552</strong></p><p>💬 <strong>WhatsApp: +91 89195 22552</strong></p><p>📍 India • Bulk orders & customization</p></div>
+    </div>
+    <form id="quoteForm" onsubmit="submitQuote(event)">
+      <div class="form-row"><label>Name<input required name="name" placeholder="Your name"></label><label>Company<input name="company" placeholder="Company name"></label></div>
+      <div class="form-row"><label>Phone / WhatsApp<input required name="phone" placeholder="+91"></label><label>Email<input type="email" name="email" placeholder="you@company.com"></label></div>
+      <div class="form-row"><label>Bottle size<select name="size"><option>250ml</option><option>500ml</option><option>750ml</option><option>1 litre</option><option>Multiple sizes</option></select></label><label>Quantity<input name="quantity" placeholder="e.g. 5,000"></label></div>
+      <label>Customization requirements<textarea name="message" rows="4" placeholder="Logo printing, colours, event date, delivery location, etc."></textarea></label>
+      <button class="btn full" type="submit">Send Quote Request →</button>
+      <p class="form-note">Demo form: connect this to your email, WhatsApp or backend before publishing.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="container footer">
+    <div><a class="logo" href="#home"><span>Eco</span>Go<span class="dot">.</span></a><p>Branded paper bottles for a more sustainable tomorrow.</p></div>
+    <div><h4>Products</h4><a href="#products">250ml</a><a href="#products">500ml</a><a href="#products">750ml</a><a href="#products">1 litre</a></div>
+    <div><h4>Business</h4><a href="#custom">Custom Branding</a><a href="#quote">Bulk Orders</a><a href="#quote">Request Quote</a></div>
+    <div><h4>Contact</h4><a href="tel:+918919522552">+91 89195 22552</a><a href="https://wa.me/918919522552" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div>
+  <div class="container copyright">© 2026 EcoGo. Replace placeholder contact details with the seller's verified details.</div>
+</footer>
+<div class="contact-float">
+  <a class="call-float" href="tel:+918919522552" aria-label="Call EcoGo">☎</a>
+  <a class="wa-float" href="https://wa.me/918919522552?text=Hello%20EcoGo%2C%20I%20am%20interested%20in%20your%20paper%20bottles." target="_blank" rel="noopener" aria-label="WhatsApp EcoGo">◉</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
